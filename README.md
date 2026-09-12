@@ -1,40 +1,54 @@
 # DSC5003 Group Project
 
-## 技术栈
-- 后端：FastAPI（Python 3.12）
-- 数据库：（待定）
+## Tech Stack
+- Backend: FastAPI (Python 3.12)
+- Database: TBD
 
-## 如何运行
+## Getting Started
 
-1. 克隆仓库：
-   ```bash
-   git clone <repo-url>
-   cd <repo-name>
-   ```
+### 1. Clone the repository
+```bash
+git clone <repo-url>
+cd <repo-name>
+```
 
-2. 建虚拟环境：
-   ```bash
-   python -m venv .venv
-   ```
+### 2. Create a virtual environment
+```bash
+python -m venv .venv
+```
 
-3. 激活虚拟环境：
-   - Windows PowerShell：
-     ```powershell
-     .venv\Scripts\Activate.ps1
-     ```
-   - Mac / Linux：
-     ```bash
-     source .venv/bin/activate
-     ```
+### 3. Activate the virtual environment
+- Windows (PowerShell):
+  ```powershell
+  .venv\Scripts\Activate.ps1
+  ```
+- macOS / Linux:
+  ```bash
+  source .venv/bin/activate
+  ```
 
-4. 安装依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 4. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-5. 启动服务：
-   ```bash
-   uvicorn main:app --reload
-   ```
+### 5. Run the server
+```bash
+uvicorn main:app --reload
+```
 
-6. 浏览器打开 http://127.0.0.1:8000
+### 6. Open in your browser
+http://127.0.0.1:8000
+
+## Project Structure
+```
+.
+├── main.py              # FastAPI entry point
+├── requirements.txt     # Python dependencies
+├── .gitignore
+└── README.md
+```
+
+## Notes
+- The virtual environment (`.venv/`) is not tracked by Git.
+  Each member should create their own after cloning.
